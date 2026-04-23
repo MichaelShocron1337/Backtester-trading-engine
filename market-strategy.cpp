@@ -61,6 +61,7 @@
         double deviation = One_Deviation_VWAP(data, period);
         deviation = deviation*1.3;
         //inom 2nd div -> 30% efter den så om 2nd div är 5, lägg på 30%
+     // Tanken här är att man kan dela varje div i bitar, istället för att den måste nudda 2nd div, så "höjer" vi ribban
         if(price < std2+deviation)
         {
             return true;
