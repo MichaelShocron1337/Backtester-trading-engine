@@ -265,8 +265,7 @@ bool readFromFile(vector<MarketData>& DataList, const string& filename)
 
 }
 
-
-
+// This CLI will be removed to another file when the other components are ready
 int main(int argc, char* argv[])
 {
      if(argc < 3)
